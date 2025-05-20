@@ -14,7 +14,7 @@
 
 let numbersArray = [1, 44, 28, 32, 65]
 function removeSmallest(numbers) {
-  if (Array.isArray(numbers) || numbers.length === 0) return [];
+  if (!input || !Array.isArray(numbers) || numbers.length === 0) return [];
 
   let minIndex = numbers.reduce((minIdx, current, idx, arr) =>
     current < arr[minIdx] ? idx : minIdx
