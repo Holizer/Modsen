@@ -7,9 +7,9 @@
         } 
     }; 
     const getName = obj.getName;
-    console.log(getName());
+    console.log(getName());  // undefined 
 
-    // Решение 1 С восставновлением конекста через call или apply
+    // Решение 1 С восстановлением контекста через call или apply
     console.log(getName.call(obj)); 
     console.log(getName.apply(obj));
     
@@ -131,7 +131,7 @@
     
     // // Пример использования функции
     countVowels = (str) => {
-        const letters = ['a', 'e', 'i', 'o', 'u']; // Сижу в поезде и забыл как будт гласные на анлийском. . .
+        const letters = ['a', 'e', 'i', 'o', 'u']; // Сижу в поезде и забыл как будут гласные на английском. . .
         let count = 0;
         for (let i = 0; i < str.length; i++) {
             for (let j = 0; j < letters.length; j++) {
