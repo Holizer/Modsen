@@ -131,15 +131,15 @@
     
     // // Пример использования функции
     countVowels = (str) => {
-        const letters = ['a', 'e', 'i', 'o', 'u']; // Сижу в поезде и забыл как будут гласные на английском. . .
+        const vowelsLetters = ['a', 'e', 'i', 'o', 'u'];
         let count = 0;
         for (let i = 0; i < str.length; i++) {
-            for (let j = 0; j < letters.length; j++) {
-                if (str[i] === letters[j])
+            for (let j = 0; j < vowelsLetters.length; j++) {
+                if (str[i] === vowelsLetters[j])
                     count++
             }
-            // letters.forEach(letter => {
-            //     if(str[i] === letter)
+            // vowelsLetters.forEach(vowelLetter => {
+            //     if(str[i] === vowelLetter)
             //         count++
             // })
         }
